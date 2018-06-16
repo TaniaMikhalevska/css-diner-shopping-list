@@ -1,0 +1,136 @@
+*;
+*:before, *:after {
+    box-sizing: border-box;
+}    
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.css_dinner_shopping_list__header {
+    padding: 22px 0 22px 0;
+    background-color: #4a4f56;
+    text-align: center;
+    color: #e77a7a;
+    margin: 25px 25px 0 25px;
+}
+.css_dinner_shopping_list__header h1{
+    font: 600 35px Trebuchet MS”, Trebuchet, Arial, sans-serif;
+    display: block;
+    margin:0;
+    
+}
+.css_dinner_shopping_list__header p{
+    display: block;
+    font: 200 24px Trebuchet MS”, Trebuchet, Arial, sans-serif;
+    margin: 0;
+}
+.css_dinner_shopping_list__main {
+    margin: 0 25px 0 25px;
+    background-color: #3b3f45;
+}
+.css_dinner_shopping_list__article {
+    
+    padding: 0;
+}
+.css_dinner_shopping_list__article ul {
+    padding: 30px 0 50px 0px;
+    display: block;
+    list-style: none;
+    font-family: Trebuchet MS”, Trebuchet, Arial, sans-serif;
+    margin: 0 auto;
+    width: 800px;
+}
+.css_dinner_shopping_list__article li {
+    overflow: hidden;
+    height:65px;
+    
+    
+}
+.css_dinner_shopping_list__article li:nth-child(odd) {
+    background: #88839e;
+    transition: all .1s ease-in;
+    border-bottom: 2px solid #88839e;
+    border-top: 2px solid #88839e;
+}
+.css_dinner_shopping_list__article li:nth-child(even){
+    background: #7a7593;
+    transition: all .1s ease-in;
+    border-bottom: 2px solid #7a7593;
+    border-top: 2px solid #7a7593;
+}
+.css_dinner_shopping_list__article li:hover {
+    background: #625e77;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    cursor: pointer;
+    
+}
+.css_dinner_shopping_list__article li:active {
+    background: #956374;
+}
+
+
+.css_dinner_shopping_list__article input {
+    float:left;
+    display: block;
+    margin-top: 20px;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+.css_dinner_shopping_list__article h2 {
+    float:left;
+    color: #dedede;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 17px;
+    margin: 0;
+}
+.css_dinner_shopping_list__article span {
+    float:left;
+    color: #c8b6b1;
+    font-size: 14px;
+    padding: 24px 380px 24px 0;
+}
+
+.css_dinner_shopping_list__article span:before {
+	content: "(";
+    color: #c8b6b1;
+    font-size: 14px;
+    
+}
+.css_dinner_shopping_list__article span:after {
+	content: ")";
+    color: #c8b6b1;
+    font-size: 14px;
+}
+.css_dinner_shopping_list__footer {
+    background-color: #3b3f45;
+    text-align: center;
+    color: #e77a7a;
+    margin: 0 25px 0 25px;
+    height: 125px;
+}
+
+.css_dinner_shopping_list__footer p {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    font: 200 24px Trebuchet MS”, Trebuchet, Arial, sans-serif;
+    background-color: #4a4f56;
+    padding: 15px 0 15px 0;
+}
+.css_dinner_shopping_list__footer p:after {
+    content: ")";
+    width: 20px;
+}
+
+input[type="checkbox"] + label>h2, input[type="checkbox"] + label>span {
+    transition: all .1s ease-in;
+}
+input[type="checkbox"]:checked + label>h2, input[type="checkbox"]:checked + label>span {
+  text-decoration: line-through;  
+}
